@@ -8,11 +8,17 @@
     */
 
     //ENTRADA
-
+let raio = Number(prompt("informe o raio do círculo"));
 
     //PROCESSAMENTO
-
-
+    function calculea(area){
+        return 3.14 * area ** 2;
+    }
+    function calculep(perimetro){
+        return 2 * 3.14 * perimetro;
+    }
+const perimetro = calculep(raio);
+const area = calculea(raio);
     //SAÍDA
-
+    alert(`esse é a área do círculo ${area}\n esse é o perímetro do ocirculo ${perimetro}`)
 </script>

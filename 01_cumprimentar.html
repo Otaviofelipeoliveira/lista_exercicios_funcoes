@@ -5,13 +5,24 @@
     "Bom dia, Visitante!"
     *Substitua a palavra Visitante pelo nome do usuário, que será fornecido pelo próprio usuário.
     */
-
     //ENTRADA
-
-
+    let usuario = prompt("qual é o seu nome?").toLowerCase().trim();
+    let horarios = prompt("Que horas são?");
     //PROCESSAMENTO
-
-
+    function horas(cumprimento){
+        if(cumprimento >= 0 && cumprimento <= 12){
+            alert(`bom dia, ${usuario}`)
+        }else if (cumprimento >= 13 && cumprimento <= 18){
+            alert(`boa tarde, ${usuario}`)
+        }else if(cumprimento >= 19 && cumprimento <= 23){
+            alert(`boa noite , ${usuario}`)
+        }else{
+            alert(`informe o horário certo`)
+        }
+    }
+    
+    horas(horarios)
+    
     //SAÍDA
     
 </script>
